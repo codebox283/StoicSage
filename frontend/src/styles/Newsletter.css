@@ -1,0 +1,60 @@
+.Newsletter{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#Newsletter-cont{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+#Newsletter-cont h1{
+    color: white ;
+    position: absolute;
+    top: 10%;
+    opacity: 0.8;
+    font-weight: 100;
+}
+
+#Newsletter-cont img{
+    width: 100%;
+    /* height: 70vh;
+    object-fit: cover; */
+    transition: 1s;
+}
+
+#Newsletter-cont button{
+    position: absolute;
+    bottom: 7%;
+    right: 5%;
+}
+
+.Btn{
+    width: 150px;
+    height: 50px;
+    font-family: 'Playfair Display';
+    font-size: 15px;
+}
+
+.Btn:hover{
+    width: 152px;
+    height: 52px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.066);
+}
+
+#Newsletter-cont img:hover{
+    width: 120%;
+}

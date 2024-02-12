@@ -1,0 +1,8 @@
+.What{
+    width: 100%;
+    overflow: hidden;
+}
+
+#WhatImg img{
+    width: 100%;
+}
