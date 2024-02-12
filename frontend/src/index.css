@@ -1,0 +1,7 @@
+:root {
+  --font-family: "Playfair Display";
+}
+
+body {
+  font-family: var(--font-family);
+}

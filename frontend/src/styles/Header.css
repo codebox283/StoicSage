@@ -1,0 +1,21 @@
+.Header{
+    background-color: white;
+    padding-inline: 40px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Logo{
+    font-weight: 200;
+}
+
+#Navbar{
+    list-style: none;
+    display: flex;
+}
+
+#Navbar li{
+    margin-right: 40px;
+    margin-top: 15px;
+}
