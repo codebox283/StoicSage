@@ -1,0 +1,23 @@
+.Wall{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Wall-cont{
+    width: 80%;
+    height: 40vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#Wall-cont h1{
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    font-weight: 200;
+}

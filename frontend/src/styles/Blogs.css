@@ -1,0 +1,32 @@
+.Blogs {
+    width: 100%;
+    margin: 100px 0;
+    padding: 100px 0;
+    color: white;
+    background-color: black;
+    text-align: center;
+    height: fit-content;
+}
+
+.Blogs h1 {
+    font-size: 2.2rem;
+    font-weight: 100;
+}
+
+.slider-wraper .img-list{
+    display: grid;
+    gap: 18px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.slider-wraper .img-list::-webkit-scrollbar{
+    display: none;
+}
+
+.slider-wraper .img-list .img-item{
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+}

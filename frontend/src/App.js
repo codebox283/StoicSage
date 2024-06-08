@@ -1,16 +1,11 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import What from './components/What';
-import Newsletter from './components/Newsletter';
+import Home from './pages/Home';
 import './App.css';
 
 function App() {
   return (
     <>
-      <Header></Header>
-      <Hero></Hero>
-      <What></What>
-      <Newsletter></Newsletter>
+      <Home></Home>
+      
     </>
   );
 }
