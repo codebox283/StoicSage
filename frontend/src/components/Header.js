@@ -11,6 +11,7 @@ function Header() {
                 <li>Blogs</li>
             </ul>
         </div>
+        {/* <div className="Line"></div> */}
       </div>
     );
   }

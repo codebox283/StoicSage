@@ -1,15 +1,32 @@
-.What{
+.What {
     width: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
-#WhatImg{
+#WhatImg {
     width: 80%;
 }
 
-#WhatImg img{
+#WhatImg img {
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .What {
+        flex-direction: column;
+    }
+
+    #WhatImg {
+        width: 100%;
+        height: 50vw;
+    }
+
+    #WhatImg img {
+        width: 100%;
+        height: 50vw;
+    }
 }

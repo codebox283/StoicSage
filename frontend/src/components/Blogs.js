@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import '../styles/Blogs.css';
-import image1 from '../assets/img1.jpg';
-import image2 from '../assets/img2.jpg';
-import image3 from '../assets/img3.jpg';
-import image4 from '../assets/img4.jpg';
-import image5 from '../assets/img5.jpg';
-import image6 from '../assets/img6.jpg';
+import image1 from '../assets/1-min.png';
+import image2 from '../assets/2-min.png';
+import image3 from '../assets/3-min.png';
+import image4 from '../assets/4-min.png';
+import image5 from '../assets/5-min.png';
+import image6 from '../assets/6-min.png';
 
 function Blogs() {
     const initSlider = () =>{
@@ -15,6 +15,7 @@ function Blogs() {
 
     return (
         <div className="Blogs">
+            <p>More on Stoicism</p>
             <h1>Learn more about Stoicism through our daily blogs.</h1>
             <div className="slider-wraper">
                 {/* <button id='prev-slide' className='slide-button material-symbols-rounded'>chevron_left</button> */}

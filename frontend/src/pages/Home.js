@@ -6,6 +6,7 @@ import StoicAI from '../components/StoicAI';
 import Wallpapers from  '../components/Wallpapers';
 import Blogs from '../components/Blogs';
 import Footer from '../components/Footer';
+import Discover from '../components/Discover';
 // import './App.css';
 
 function Home() {
@@ -13,12 +14,14 @@ function Home() {
     <>
       <Header></Header>
       <Hero></Hero>
-      <What></What>
+      <Discover></Discover>
+      <Blogs></Blogs>
+      {/* <Footer></Footer> */}
       <Newsletter></Newsletter>
+      {/*
       <StoicAI></StoicAI>
       <Wallpapers></Wallpapers>
-      <Blogs></Blogs>
-      <Footer></Footer>
+      <Footer></Footer> */}
     </>
   );
 }
