@@ -53,9 +53,46 @@
     font-family: 'Poppins';
 }
 
+.News-Panel input{
+    width: 300px;
+    height: 30px;
+    padding-top: 10px;
+    border: none;
+    font-size: 12px;
+    font-family: 'Poppins';
+    color: rgb(144, 144, 144);
+    background-color: black;
+    border-bottom: 2px solid rgb(144, 144, 144);
+}
+
+/* Focus and Active states */
+.News-Panel input:focus,
+.News-Panel input:active {
+    border: none; /* Same as default state */
+    background-color: black; /* Same as default state */
+    border-bottom: 2px solid rgb(144, 144, 144); /* Same as default state */
+    outline: none; /* Ensure no outline on focus or active */
+    /* Any other properties should match the default state */
+}
+
+#privacy{
+    display: flex;
+}
+
+#privacy input{
+    width: 10px;
+}
+
+#privacy p{
+    font-size: 10px;
+    color: rgb(144, 144, 144);
+    font-weight: 300;
+}
+
 .News-Panel button {
-    width: 150px;
-    height: 50px;
+    width: 100px;
+    height: 35px;
+    font-size: 12px;
     font-family: 'Poppins';
     cursor: pointer;
 }
@@ -71,17 +108,25 @@
 .News-Panel div ul{
     list-style: none;
     font-family: 'Poppins';
-    font-size: 15px;
-    font-weight: 200;
+    font-size: 14px;
+    font-weight: 400;
     margin-left: -40px;
+    /* margin-top: -20px; */
 }
 
 .News-Panel div ul li{
     float: left;
+    display: inline-block;
     margin-right: 40px;
     cursor: pointer;
+    position: relative;
+    border-bottom: 2px solid black;
+    transition: ease-in 0.4s;
 }
 
+.News-Panel div ul li:hover {
+    border-bottom: 1px solid white;
+}
 
 @media (max-width: 1024px) {
     .News-Img h1 {
@@ -116,8 +161,11 @@
         width: 100%;
         padding-left: 0px;
         margin-top: -230px;
-        margin-bottom: 150px;
+        margin-bottom: 250px;
         margin-left: -40px;
+    }
+    .News-Panel input{
+        width: 100%;
     }
     .News-Panel button{
         margin: 30px 0px;

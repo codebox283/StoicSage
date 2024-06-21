@@ -36,7 +36,20 @@
     justify-content: center;
     overflow: hidden;
     box-sizing: border-box;
+    position: relative; 
+    animation: slideFromRight 1s forwards; 
+    animation-delay: 2s;
 }
+
+@keyframes slideFromRight {
+    from {
+        right: -100%;
+    }
+    to {
+        right: 0;
+    }
+}
+
 
 .Hero-Img img {
     height: 100%;

@@ -16,6 +16,7 @@ function Home() {
       <Hero></Hero>
       <Discover></Discover>
       <Blogs></Blogs>
+      {/* <StoicAI></StoicAI> */}
       {/* <Footer></Footer> */}
       <Newsletter></Newsletter>
       {/*
