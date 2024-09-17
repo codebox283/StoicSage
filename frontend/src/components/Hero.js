@@ -5,7 +5,7 @@ function Hero() {
   return (
     <div className="Hero">
       <div className="Hero-Title">
-        <h1 className="Hero-Title-head">“If it is not right, do not do it, if it is not true, do not say it.”</h1>
+        <h1 className="Hero-Title-head">“The happiness of your life depends upon the quality of your thoughts.”</h1>
         <h1>– Marcus Aurelius</h1>
       </div>
       <div className="Hero-Img">

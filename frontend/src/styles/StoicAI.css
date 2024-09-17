@@ -1,7 +1,104 @@
-.AI{
+.StoicAIContainer {
+    width: 100%;
+    height: fit-content;
+    padding: 50px;
     background-color: black;
+    color: white;
+    font-family: 'Fraunces';
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
-.AI h1{
+.AI-head p {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-variant: small-caps;
+}
+
+.AI-head h1 {
+    font-size: 60px;
+    font-weight: 300;
+    margin-top: -20px;
+    margin-bottom: 150px;
+}
+
+.SCard {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.SCard a{
+    text-decoration: none;
+}
+
+.SCard h4 {
+    margin-top: 10px;
+    /* font-weight: 400;
+    font-size: 0.9rem; */
     color: white;
+    text-align: center;
+    font-variant: normal;
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 0.8em;
+}
+
+.SCard p {
+    margin-top: -10px;
+    /* font-size: 0.7em; */
+    color: #ccc;
+    /* text-align: left; */
+    font-size: 0.7em;
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+
+@media (max-width: 768px) {
+    .StoicAIContainer{
+        padding: 20px;
+    }
+
+    .AI-head h1 {
+        font-size: 40px;
+    }
+
+    .AI-head p {
+        font-size: 16px;
+    }
+    .SCard {
+        width: 200px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .AI-head h1 {
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 70px;
+    }
+
+    .SCard {
+        width: 100%;
+        height: 400px;
+        margin-bottom: -250px;
+    }
+}
+
+#end-p{
+    margin-top: 100px;
+    margin-right: 50px;
+    align-self: flex-end;
+    font-size: 0.5em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-family: 'Poppins';
 }

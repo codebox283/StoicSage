@@ -1,7 +1,6 @@
 import '../styles/Newsletter.css';
-import Img from '../assets/news-img.jpg';
+import Img from '../assets/news-img-min.jpg';
 import { Link } from 'react-router-dom';
-import { NewsletterPage } from '../pages/NewsletterPage';
 
 function Newsletter() {
     return (
@@ -19,8 +18,8 @@ function Newsletter() {
                 {/* <input type="text" placeholder="Name" /> */}
                 <input type="email" placeholder="Email Adress" />
                 <div id='privacy'><input type="checkbox" /><p>I agree to the Privacy Policies</p></div>
-                <Link to="/newsletter">
-                    <button>Subscribe</button>
+                <Link className='Link' to="/">
+                    <button className='Button'>Subscribe</button>
                 </Link>
                 <div>
                     <p>Connect with us on</p>

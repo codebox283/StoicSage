@@ -1,0 +1,211 @@
+.BlogsMain {
+    width: 100%;
+    height: fit-content;
+    padding: 50px;
+    background-color: black;
+    color: white;
+    font-family: 'Fraunces';
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+
+
+.Blogs-head p {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-variant: small-caps;
+    position: relative; 
+    left: -100%;
+    animation: slideFromLeft 1s forwards; 
+}
+
+@keyframes slideFromLeft {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+
+.Blogs-head h1 {
+    font-size: 60px;
+    font-weight: 300;
+    margin-top: -20px;
+    position: relative; 
+    left: -100%;
+    animation: slideFromLeft 1s forwards; 
+}
+
+@keyframes slideFromLeft {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+
+.BlogsCardsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative; 
+    left: -100%;
+    animation: slideFromLeft 1s forwards; 
+}
+
+@keyframes slideFromLeft {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+
+.BCard {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.BCardDetails{
+    margin-left: 30px;
+}
+
+.BCard img {
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.BCard h4 {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 2rem;
+    color: white;
+    text-align: left;
+    font-variant: small-caps;
+}
+
+.BCard p {
+    margin-top: -10px;
+    font-size: 0.7em;
+    color: #ccc;
+    text-align: left;
+}
+
+.BCard button {
+    margin-top: 20px;
+    width: 110px;
+    height: 40px;
+    padding: 10px 20px;
+    font-size: 0.8em;
+    font-family: "Franceus";
+    color: #000;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.BCard button:hover {
+    /* width: 120px;
+    height: 42px;
+    font-size: 0.85em; */
+    background-color: #ffffff;
+    box-shadow: 1px 1px 15px #8b8b8b inset;
+}
+@media (max-width: 768px) {
+    .BlogsMain {
+        padding: 20px;
+    }
+
+    .Blogs-head h1 {
+        font-size: 40px;
+    }
+
+    .Blogs-head p {
+        font-size: 16px;
+    }
+    .BCard {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .Blogs-head h1 {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .BCard {
+        width: 100%;
+        height: 130px;
+        margin-bottom: 10px;
+    }
+
+    .BlogsCardsContainer {
+        justify-content: flex-start;
+    }
+
+    .BCard img {
+        width: 30vw;
+        min-height: 100%;
+    }
+
+    .BCardDetails{
+        width: 70vw;
+        animation: none;
+    }
+
+    .BCard h4 {
+        font-weight: 200;
+        font-size: 0.9rem;
+        margin-bottom: 0px;
+    }
+
+    .BCard p {
+        margin-top: 0px;
+        font-size: 0.6em;
+        display: none;
+    }
+
+    .BCard button {
+        margin-top: 20px;
+        width: 90px;
+        height: 30px;
+        padding: 10px 20px;
+        font-size: 0.6em;
+    }
+
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}

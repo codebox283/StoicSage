@@ -56,23 +56,23 @@
 .News-Panel input{
     width: 300px;
     height: 30px;
-    padding-top: 10px;
+    padding-left: 10px;
     border: none;
     font-size: 12px;
     font-family: 'Poppins';
     color: rgb(144, 144, 144);
     background-color: black;
+    /* border-left: 2px solid rgb(144, 144, 144); */
     border-bottom: 2px solid rgb(144, 144, 144);
 }
 
-/* Focus and Active states */
 .News-Panel input:focus,
 .News-Panel input:active {
-    border: none; /* Same as default state */
-    background-color: black; /* Same as default state */
-    border-bottom: 2px solid rgb(144, 144, 144); /* Same as default state */
-    outline: none; /* Ensure no outline on focus or active */
-    /* Any other properties should match the default state */
+    border: none; 
+    background-color: black;
+    /* border-left: 2px solid rgb(144, 144, 144); */
+    border-bottom: 2px solid rgb(144, 144, 144);
+    outline: none;
 }
 
 #privacy{
@@ -89,7 +89,12 @@
     font-weight: 300;
 }
 
-.News-Panel button {
+.Link{
+    width: 100px;
+    height: 40px;
+}
+
+.Button {
     width: 100px;
     height: 35px;
     font-size: 12px;
@@ -97,7 +102,7 @@
     cursor: pointer;
 }
 
-.News-Panel button:hover {
+.Button:hover {
     /* width: 120px;
     height: 42px;
     font-size: 0.85em; */
@@ -161,13 +166,16 @@
         width: 100%;
         padding-left: 0px;
         margin-top: -230px;
-        margin-bottom: 250px;
+        margin-bottom: 150px;
         margin-left: -40px;
     }
     .News-Panel input{
         width: 100%;
     }
-    .News-Panel button{
+    .Link{
+        margin-bottom: 30px;
+    }
+    .Button{
         margin: 30px 0px;
     }
     .News-Panel div{

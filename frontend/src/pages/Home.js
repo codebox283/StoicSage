@@ -16,9 +16,10 @@ function Home() {
       <Hero></Hero>
       <Discover></Discover>
       <Blogs></Blogs>
-      {/* <StoicAI></StoicAI> */}
+      <StoicAI></StoicAI>
       {/* <Footer></Footer> */}
       <Newsletter></Newsletter>
+      <Footer></Footer>
       {/*
       <StoicAI></StoicAI>
       <Wallpapers></Wallpapers>

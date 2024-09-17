@@ -1,0 +1,119 @@
+.DiscoverPage{
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    padding-bottom: 150px;
+}
+
+#NameTag{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+
+#NameTag img{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    /* object-position: 0px 3%; */
+    /* object-position: 0px 20%; */
+    position: relative; 
+    left: -100%;
+    animation: slideFromLeft 1s forwards; 
+}
+
+@keyframes slideFromLeft {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+#NameTag h1{
+    font-size: 40px;
+    font-weight: 300;
+    font-family: 'Fraunces';
+    font-variant: small-caps;
+    margin-left: 40px;
+    position: relative; 
+    left: -100%;
+    animation: slideFromLeft 1s forwards; 
+}
+
+@keyframes slideFromLeft {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.DiscoverPage div{
+    width: 80vw;
+    height: fit-content;
+    font-size: 18px;
+    font-weight: 200;
+    font-family: 'Poppins';
+    margin-left: 100px;
+    position: relative; 
+    left: -100%;
+    animation: slideFromLeft 1s forwards; 
+}
+
+@keyframes slideFromLeft {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+
+.DiscoverPage div h3{
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px){
+    #NameTag{
+        margin-left: 60px;
+    }
+    #NameTag h1{
+        margin-left: 0px;
+    }
+    .DiscoverPage div{
+        margin-left: 60px;
+        padding: none;
+    }
+    .DiscoverPage p{
+        margin-left: -80px;
+        padding: none;
+    }
+}
+
+
+@media (max-width: 480px){
+    #NameTag{
+        margin-left: 40px;
+    }
+    #NameTag h1{
+        font-size: 30px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .DiscoverPage div{
+        margin-left:40px;
+        font-size: 12px;
+    }
+    .DiscoverPage div h3{
+        font-size: 15px;
+    }
+}

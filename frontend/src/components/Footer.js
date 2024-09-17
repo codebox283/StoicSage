@@ -1,32 +1,19 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Footer.css';
 
 function Footer() {
 
     return (
-        <div className='footer-container'>
-            <div className='newsletter'>
-                <p>Subscribe to our newsletter</p>
-                <input placeholder='Email'></input>
-            </div>
-            <div className='services'>
-                <ul className='lists'>
-                    <li>Services</li>
-                    <li>Blogs</li>
-                    <li>StoicAI</li>
-                    <li>Wallpapers</li>
-                    <li>QuoteOfTheDay</li>
-                </ul>
-            </div>
-            <div className='socials'>
-                <ul className='lists'>
-                    <li>Socials</li>
-                    <li>Instagram</li>
-                    <li>Youtube</li>
-                    <li>GitHub</li>
-                    <li>Somwhere else</li>
-                </ul>
-            </div>
+        <div className='Footer'>
+            <p>&copy; 2024 - All rights reserved</p>
+            {/* <p>Check out more here</p> */}
+            <ul id="FNavbar">
+                <Link to='/'><li>Home</li></Link>
+                <Link to='/discover'><li>Discover</li></Link>
+                <Link to='/blogs'><li>Blogs</li></Link>
+                <Link to='/'><li>StoicAI</li></Link>
+            </ul>
         </div>
     );
 }

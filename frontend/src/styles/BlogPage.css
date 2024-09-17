@@ -1,0 +1,133 @@
+.BlogPage{
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    margin-bottom: -10px;
+}
+
+.BlogPage img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 0px 3%;
+    /* object-position: 0px 20%; */
+    position: relative; 
+    left: -100%;
+    animation: slideFromLeft 1s forwards; 
+}
+
+@keyframes slideFromLeft {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+
+.BlogPage h1{
+    font-size: 40px;
+    font-weight: 300;
+    font-family: 'Fraunces';
+    padding: 50px 0;
+    padding-left: 100px;
+    font-variant: small-caps;
+    position: relative; 
+    left: -100%;
+    animation: slideFromLeft 1s forwards; 
+}
+
+@keyframes slideFromLeft {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+
+.BlogPage div{
+    width: 80vw;
+    height: fit-content;
+    font-size: 18px;
+    font-weight: 200;
+    font-family: 'Poppins';
+    padding-left: 100px;
+    padding-bottom: 100px;
+    position: relative; 
+    left: -100%;
+    animation: slideFromLeft 1s forwards; 
+}
+
+@keyframes slideFromLeft {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+
+.BlogPage div h3{
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.BlogPage p{
+    width: 80%;
+    height: fit-content;
+    font-size: 10px;
+    font-weight: 200;
+    font-family: 'Poppins';
+    padding-left: 100px;
+    padding-bottom: 100px;
+    text-align: right;
+}
+
+@media (max-width: 600px){
+    .BlogPage h1{
+        padding: none;
+        margin-left: -80px;
+    }
+    .BlogPage div{
+        margin-left: -80px;
+        padding: none;
+    }
+    .BlogPage p{
+        margin-left: -80px;
+        padding: none;
+    }
+}
+
+
+@media (max-width: 480px){
+    .BlogPage img{
+        height: 30vw;
+    }
+    .BlogPage h1{
+        margin-left: -60px;
+        font-size: 30px;
+        margin-top: -20px;
+        margin-bottom: -20px;
+    }
+    .BlogPage div{
+        margin-left: -60px;
+        font-size: 12px;
+    }
+    .BlogPage div h3{
+        font-size: 15px;
+    }
+    .BlogPage p{
+        margin-left: -60px;
+        margin-top: -40px;
+        margin-bottom: -20px;
+        font-size: 8xpx;
+        padding: none;
+    }
+}

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import img1 from '../assets/marcus1.png';
 import img2 from '../assets/epictetus1.jpg';
 import img3 from '../assets/miyamoto3.jpg';
+import { Link } from 'react-router-dom';
 import '../styles/Discover.css';
 
 function Discover() {
@@ -47,7 +48,7 @@ function Discover() {
                         <div className={`CardDetails fade-in-section ${visibleCards.includes(`card-${stoic.id}`) ? 'is-visible' : ''}`}>
                             <h4>{stoic.name}</h4>
                             <p>{stoic.description}</p>
-                            <button>Learn More</button>
+                            <Link to='/discover'><button>Learn More</button></Link>
                         </div>
                     </div>
                 ))}
